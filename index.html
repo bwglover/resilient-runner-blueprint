@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resilient Runner's Blueprint</title>
+    <title>Brendan's Running Recovery Blueprint</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +40,13 @@
         .day-selector {
             transition: all 0.3s ease;
             cursor: pointer;
+            /* Added for mobile optimization: ensure buttons have enough padding on small screens */
+            padding-left: 0.75rem; /* px-3 */
+            padding-right: 0.75rem; /* px-3 */
+            padding-top: 0.5rem;   /* py-2 */
+            padding-bottom: 0.5rem;/* py-2 */
+            font-size: 0.875rem;   /* text-sm */
+            white-space: nowrap; /* Prevent text wrapping within a button */
         }
         .day-selector.active {
             background-color: #f59e0b;
@@ -83,8 +90,8 @@
 
     <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8">
         <header class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-slate-800">Resilient Runner's Blueprint</h1>
-            <p class="mt-2 text-lg text-slate-600">Your 6-Week Non-Impact Strength & Recovery Plan</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800">Brendan's Running Recovery Blueprint</h1>
+            <p class="mt-2 text-lg text-slate-600">Your Personalized 6-Week Non-Impact Strength & Recovery Plan</p>
         </header>
 
         <main>
@@ -139,14 +146,14 @@
                         <h3 class="text-2xl font-bold text-slate-800">Phase 1: Foundation & Mobility</h3>
                         <p class="text-slate-600 mt-1">Focus on perfect form, gentle strengthening, and restoring mobility. No pain, ever.</p>
                     </div>
-                    <div class="flex justify-center gap-2 mb-8">
-                        <button class="day-selector active border border-slate-300 rounded-full px-4 py-2" data-day="p1sunday">Sunday: Strength</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p1monday">Monday: Stability</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p1tuesday">Tuesday: Recovery</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p1wednesday">Wednesday: Strength</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p1thursday">Thursday: Stability</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p1friday">Friday: Recovery</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p1saturday">Saturday: Rest</button>
+                    <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <button class="day-selector active border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1sunday">Sunday: Strength</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1monday">Monday: Stability</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1tuesday">Tuesday: Recovery</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1wednesday">Wednesday: Strength</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1thursday">Thursday: Stability</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1friday">Friday: Recovery</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p1saturday">Saturday: Rest</button>
                     </div>
                     <div id="p1sunday" class="day-content active">
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -453,14 +460,14 @@
                         <h3 class="text-2xl font-bold text-slate-800">Phase 2: Strength Building & Stability</h3>
                         <p class="text-slate-600 mt-1">Increase the load on the uninjured leg and challenge core stability.</p>
                     </div>
-                     <div class="flex justify-center gap-2 mb-8">
-                        <button class="day-selector active border border-slate-300 rounded-full px-4 py-2" data-day="p2sunday">Sunday: Strength</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p2monday">Monday: Stability</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p2tuesday">Tuesday: Recovery</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p2wednesday">Wednesday: Strength</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p2thursday">Thursday: Stability</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p2friday">Friday: Recovery</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p2saturday">Saturday: Rest</button>
+                     <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <button class="day-selector active border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2sunday">Sunday: Strength</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2monday">Monday: Stability</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2tuesday">Tuesday: Recovery</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2wednesday">Wednesday: Strength</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2thursday">Thursday: Stability</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2friday">Friday: Recovery</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p2saturday">Saturday: Rest</button>
                     </div>
                     <div id="p2sunday" class="day-content active">
                          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -767,14 +774,14 @@
                         <h3 class="text-2xl font-bold text-slate-800">Phase 3: Running Prep & Power</h3>
                         <p class="text-slate-600 mt-1">Introduce dynamic, non-impact movements that mimic running mechanics.</p>
                     </div>
-                     <div class="flex justify-center gap-2 mb-8">
-                        <button class="day-selector active border border-slate-300 rounded-full px-4 py-2" data-day="p3sunday">Sunday: Dynamics</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p3monday">Monday: Integration</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p3tuesday">Tuesday: Recovery</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p3wednesday">Wednesday: Dynamics</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p3thursday">Thursday: Integration</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p3friday">Friday: Recovery</button>
-                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2" data-day="p3saturday">Saturday: Rest</button>
+                     <div class="flex flex-wrap justify-center gap-2 mb-8">
+                        <button class="day-selector active border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3sunday">Sunday: Dynamics</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3monday">Monday: Integration</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3tuesday">Tuesday: Recovery</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3wednesday">Wednesday: Dynamics</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3thursday">Thursday: Integration</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3friday">Friday: Recovery</button>
+                        <button class="day-selector border border-slate-300 rounded-full px-4 py-2 text-sm" data-day="p3saturday">Saturday: Rest</button>
                     </div>
                     <div id="p3sunday" class="day-content active">
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1226,3 +1233,4 @@
     </script>
 </body>
 </html>
+
